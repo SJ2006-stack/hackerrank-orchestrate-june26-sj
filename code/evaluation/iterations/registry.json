@@ -1,0 +1,138 @@
+{
+  "iterations": [
+    {
+      "iteration_id": "iter_001",
+      "strategy": "dev_v1",
+      "model": "openrouter/free",
+      "recorded_at": "2026-06-19T13:24:26.295248+05:30",
+      "notes": "",
+      "metrics": {
+        "rows": 5,
+        "claim_status_accuracy": 1.0,
+        "exact_row_match_rate": 0.0,
+        "model_calls": 5,
+        "images_processed": 8,
+        "total_latency_s": 120.16855300000316,
+        "avg_latency_s_per_claim": 24.03371060000063,
+        "per_field_accuracy": {
+          "evidence_standard_met": 1.0,
+          "evidence_standard_met_reason": 0.0,
+          "risk_flags": 0.8,
+          "issue_type": 0.6,
+          "object_part": 1.0,
+          "claim_status": 1.0,
+          "claim_status_justification": 0.0,
+          "supporting_image_ids": 0.8,
+          "valid_image": 1.0,
+          "severity": 0.6
+        }
+      },
+      "artifacts": {
+        "metrics": "iterations/iter_001_dev_v1/metrics_dev_v1.json",
+        "predictions": "iterations/iter_001_dev_v1/sample_predictions_dev_v1.csv",
+        "confusion": "iterations/iter_001_dev_v1/claim_status_confusion_dev_v1.json",
+        "mismatches": "iterations/iter_001_dev_v1/mismatches_dev_v1.csv",
+        "per_claim_timings": "iterations/iter_001_dev_v1/per_claim_timings.json"
+      }
+    },
+    {
+      "iteration_id": "iter_002",
+      "strategy": "smoke",
+      "model": "google_cascade\u2192openrouter/free",
+      "recorded_at": "2026-06-19T17:36:45.537124+05:30",
+      "notes": "CLI smoke test (1 sample claim)",
+      "metrics": {
+        "rows": 1,
+        "claim_status_accuracy": 1.0,
+        "exact_row_match_rate": 0.0,
+        "model_calls": 1,
+        "images_processed": 1,
+        "total_latency_s": 41.37978004100296,
+        "avg_latency_s_per_claim": 41.37978004100296,
+        "per_field_accuracy": {
+          "evidence_standard_met": 1.0,
+          "evidence_standard_met_reason": 0.0,
+          "risk_flags": 1.0,
+          "issue_type": 1.0,
+          "object_part": 1.0,
+          "claim_status": 1.0,
+          "claim_status_justification": 0.0,
+          "supporting_image_ids": 1.0,
+          "valid_image": 1.0,
+          "severity": 0.0
+        },
+        "prompt_tokens": 2281,
+        "completion_tokens": 179,
+        "total_tokens": 3282,
+        "providers_used": [
+          "google"
+        ],
+        "models_used": [
+          "gemma-4-26b-a4b-it"
+        ],
+        "total_fallback_attempts": 0,
+        "min_latency_s_per_claim": 41.38,
+        "max_latency_s_per_claim": 41.38,
+        "median_latency_s_per_claim": 41.38
+      },
+      "artifacts": {
+        "metrics": "iterations/iter_002_smoke/metrics_smoke.json",
+        "predictions": "iterations/iter_002_smoke/sample_predictions_smoke.csv",
+        "confusion": "iterations/iter_002_smoke/claim_status_confusion_smoke.json",
+        "mismatches": "iterations/iter_002_smoke/mismatches_smoke.csv",
+        "per_request_usage": "iterations/iter_002_smoke/per_request_usage.json",
+        "per_claim_timings": "iterations/iter_002_smoke/per_claim_timings.json"
+      }
+    },
+    {
+      "iteration_id": "iter_003",
+      "strategy": "primary_v2",
+      "model": "google_cascade\u2192openrouter/free",
+      "recorded_at": "2026-06-19T20:03:07.526878+05:30",
+      "notes": "Priorities 1-6: prompt + postprocess polish",
+      "metrics": {
+        "rows": 20,
+        "claim_status_accuracy": 0.85,
+        "exact_row_match_rate": 0.0,
+        "model_calls": 20,
+        "images_processed": 29,
+        "total_latency_s": 945.3776872519811,
+        "avg_latency_s_per_claim": 47.26888436259905,
+        "per_field_accuracy": {
+          "evidence_standard_met": 0.85,
+          "evidence_standard_met_reason": 0.0,
+          "risk_flags": 0.3,
+          "issue_type": 0.55,
+          "object_part": 0.85,
+          "claim_status": 0.85,
+          "claim_status_justification": 0.0,
+          "supporting_image_ids": 0.65,
+          "valid_image": 0.55,
+          "severity": 0.45
+        },
+        "prompt_tokens": 59099,
+        "completion_tokens": 3566,
+        "total_tokens": 89298,
+        "providers_used": [
+          "google"
+        ],
+        "models_used": [
+          "gemma-4-26b-a4b-it",
+          "gemma-4-31b-it"
+        ],
+        "total_fallback_attempts": 1,
+        "min_latency_s_per_claim": 9.965,
+        "max_latency_s_per_claim": 74.275,
+        "median_latency_s_per_claim": 46.449
+      },
+      "artifacts": {
+        "metrics": "iterations/iter_003_primary_v2/metrics_primary_v2.json",
+        "predictions": "iterations/iter_003_primary_v2/sample_predictions_primary_v2.csv",
+        "confusion": "iterations/iter_003_primary_v2/claim_status_confusion_primary_v2.json",
+        "mismatches": "iterations/iter_003_primary_v2/mismatches_primary_v2.csv",
+        "per_request_usage": "iterations/iter_003_primary_v2/per_request_usage.json",
+        "per_claim_timings": "iterations/iter_003_primary_v2/per_claim_timings.json"
+      }
+    }
+  ]
+}

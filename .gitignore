@@ -1,0 +1,15 @@
+# Secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local caches and OS
+code/.cache/
+.DS_Store
+
+# Evaluation run artifacts (optional — keep report, ignore CSV dumps)
+code/evaluation/runs/*.csv

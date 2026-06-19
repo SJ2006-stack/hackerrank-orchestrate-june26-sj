@@ -1,0 +1,74 @@
+{
+  "rows": 1,
+  "exact_row_match_rate": 0.0,
+  "per_field_accuracy": {
+    "evidence_standard_met": 1.0,
+    "evidence_standard_met_reason": 0.0,
+    "risk_flags": 1.0,
+    "issue_type": 1.0,
+    "object_part": 1.0,
+    "claim_status": 1.0,
+    "claim_status_justification": 0.0,
+    "supporting_image_ids": 1.0,
+    "valid_image": 1.0,
+    "severity": 0.0
+  },
+  "claim_status_accuracy": 1.0,
+  "claim_status_confusion_matrix": {
+    "labels": [
+      "contradicted",
+      "not_enough_information",
+      "supported"
+    ],
+    "matrix": {
+      "contradicted": {
+        "contradicted": 0,
+        "not_enough_information": 0,
+        "supported": 0
+      },
+      "not_enough_information": {
+        "contradicted": 0,
+        "not_enough_information": 0,
+        "supported": 0
+      },
+      "supported": {
+        "contradicted": 0,
+        "not_enough_information": 0,
+        "supported": 1
+      }
+    },
+    "total": 1
+  },
+  "per_object_type_accuracy": {
+    "car": {
+      "rows": 1.0,
+      "exact_row_match_rate": 0.0,
+      "claim_status_accuracy": 1.0,
+      "evidence_standard_met": 1.0,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 1.0,
+      "issue_type": 1.0,
+      "object_part": 1.0,
+      "claim_status": 1.0,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 1.0,
+      "valid_image": 1.0,
+      "severity": 0.0
+    }
+  },
+  "strategy": "smoke",
+  "model": "google_cascade\u2192openrouter/free",
+  "model_calls": 1,
+  "images_processed": 1,
+  "total_latency_s": 41.37978004100296,
+  "avg_latency_s_per_claim": 41.37978004100296,
+  "prompt_tokens": 2281,
+  "completion_tokens": 179,
+  "total_tokens": 3282,
+  "providers_used": [
+    "google"
+  ],
+  "models_used": [
+    "gemma-4-26b-a4b-it"
+  ]
+}

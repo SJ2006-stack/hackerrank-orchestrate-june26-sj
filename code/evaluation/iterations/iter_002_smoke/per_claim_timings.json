@@ -1,0 +1,19 @@
+[
+  {
+    "index": 1,
+    "user_id": "user_001",
+    "claim_object": "car",
+    "image_count": 1,
+    "model_calls": 1,
+    "model_latency_s": 41.38,
+    "latency_s": 41.38,
+    "wall_clock_s": 53.244,
+    "predicted_claim_status": "supported",
+    "provider": "google",
+    "model_used": "gemma-4-26b-a4b-it",
+    "prompt_tokens": 2281,
+    "completion_tokens": 179,
+    "total_tokens": 3282,
+    "fallback_attempts": 0
+  }
+]

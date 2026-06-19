@@ -1,0 +1,52 @@
+[
+  {
+    "index": 1,
+    "user_id": "user_001",
+    "claim_object": "car",
+    "image_count": 1,
+    "model_calls": 1,
+    "model_latency_s": 8.507,
+    "wall_clock_s": 9.209,
+    "predicted_claim_status": "supported"
+  },
+  {
+    "index": 2,
+    "user_id": "user_002",
+    "claim_object": "car",
+    "image_count": 2,
+    "model_calls": 1,
+    "model_latency_s": 6.976,
+    "wall_clock_s": 6.987,
+    "predicted_claim_status": "supported"
+  },
+  {
+    "index": 3,
+    "user_id": "user_004",
+    "claim_object": "car",
+    "image_count": 2,
+    "model_calls": 1,
+    "model_latency_s": 52.395,
+    "wall_clock_s": 52.428,
+    "predicted_claim_status": "supported"
+  },
+  {
+    "index": 4,
+    "user_id": "user_007",
+    "claim_object": "car",
+    "image_count": 1,
+    "model_calls": 1,
+    "model_latency_s": 30.142,
+    "wall_clock_s": 30.158,
+    "predicted_claim_status": "supported"
+  },
+  {
+    "index": 5,
+    "user_id": "user_005",
+    "claim_object": "car",
+    "image_count": 2,
+    "model_calls": 1,
+    "model_latency_s": 22.148,
+    "wall_clock_s": 22.169,
+    "predicted_claim_status": "contradicted"
+  }
+]

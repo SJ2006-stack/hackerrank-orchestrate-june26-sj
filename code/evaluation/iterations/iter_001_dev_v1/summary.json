@@ -1,0 +1,35 @@
+{
+  "iteration_id": "iter_001",
+  "strategy": "dev_v1",
+  "model": "openrouter/free",
+  "recorded_at": "2026-06-19T13:24:26.295248+05:30",
+  "notes": "",
+  "metrics": {
+    "rows": 5,
+    "claim_status_accuracy": 1.0,
+    "exact_row_match_rate": 0.0,
+    "model_calls": 5,
+    "images_processed": 8,
+    "total_latency_s": 120.16855300000316,
+    "avg_latency_s_per_claim": 24.03371060000063,
+    "per_field_accuracy": {
+      "evidence_standard_met": 1.0,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.8,
+      "issue_type": 0.6,
+      "object_part": 1.0,
+      "claim_status": 1.0,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.8,
+      "valid_image": 1.0,
+      "severity": 0.6
+    }
+  },
+  "artifacts": {
+    "metrics": "iterations/iter_001_dev_v1/metrics_dev_v1.json",
+    "predictions": "iterations/iter_001_dev_v1/sample_predictions_dev_v1.csv",
+    "confusion": "iterations/iter_001_dev_v1/claim_status_confusion_dev_v1.json",
+    "mismatches": "iterations/iter_001_dev_v1/mismatches_dev_v1.csv",
+    "per_claim_timings": "iterations/iter_001_dev_v1/per_claim_timings.json"
+  }
+}

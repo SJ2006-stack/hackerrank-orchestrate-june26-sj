@@ -1,0 +1,50 @@
+{
+  "iteration_id": "iter_003",
+  "strategy": "primary_v2",
+  "model": "google_cascade\u2192openrouter/free",
+  "recorded_at": "2026-06-19T20:03:07.526878+05:30",
+  "notes": "Priorities 1-6: prompt + postprocess polish",
+  "metrics": {
+    "rows": 20,
+    "claim_status_accuracy": 0.85,
+    "exact_row_match_rate": 0.0,
+    "model_calls": 20,
+    "images_processed": 29,
+    "total_latency_s": 945.3776872519811,
+    "avg_latency_s_per_claim": 47.26888436259905,
+    "per_field_accuracy": {
+      "evidence_standard_met": 0.85,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.3,
+      "issue_type": 0.55,
+      "object_part": 0.85,
+      "claim_status": 0.85,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.65,
+      "valid_image": 0.55,
+      "severity": 0.45
+    },
+    "prompt_tokens": 59099,
+    "completion_tokens": 3566,
+    "total_tokens": 89298,
+    "providers_used": [
+      "google"
+    ],
+    "models_used": [
+      "gemma-4-26b-a4b-it",
+      "gemma-4-31b-it"
+    ],
+    "total_fallback_attempts": 1,
+    "min_latency_s_per_claim": 9.965,
+    "max_latency_s_per_claim": 74.275,
+    "median_latency_s_per_claim": 46.449
+  },
+  "artifacts": {
+    "metrics": "iterations/iter_003_primary_v2/metrics_primary_v2.json",
+    "predictions": "iterations/iter_003_primary_v2/sample_predictions_primary_v2.csv",
+    "confusion": "iterations/iter_003_primary_v2/claim_status_confusion_primary_v2.json",
+    "mismatches": "iterations/iter_003_primary_v2/mismatches_primary_v2.csv",
+    "per_request_usage": "iterations/iter_003_primary_v2/per_request_usage.json",
+    "per_claim_timings": "iterations/iter_003_primary_v2/per_claim_timings.json"
+  }
+}

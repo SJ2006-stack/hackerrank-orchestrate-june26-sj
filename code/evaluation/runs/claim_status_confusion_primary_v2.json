@@ -1,0 +1,25 @@
+{
+  "labels": [
+    "contradicted",
+    "not_enough_information",
+    "supported"
+  ],
+  "matrix": {
+    "contradicted": {
+      "contradicted": 4,
+      "not_enough_information": 0,
+      "supported": 1
+    },
+    "not_enough_information": {
+      "contradicted": 1,
+      "not_enough_information": 2,
+      "supported": 0
+    },
+    "supported": {
+      "contradicted": 1,
+      "not_enough_information": 0,
+      "supported": 11
+    }
+  },
+  "total": 20
+}

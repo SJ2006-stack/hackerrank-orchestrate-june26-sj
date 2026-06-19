@@ -1,0 +1,120 @@
+{
+  "rows": 20,
+  "exact_row_match_rate": 0.0,
+  "primary_exact_row_match_rate": 0.1,
+  "per_field_accuracy": {
+    "evidence_standard_met": 0.85,
+    "evidence_standard_met_reason": 0.0,
+    "risk_flags": 0.3,
+    "issue_type": 0.55,
+    "object_part": 0.85,
+    "claim_status": 0.85,
+    "claim_status_justification": 0.0,
+    "supporting_image_ids": 0.65,
+    "valid_image": 0.55,
+    "severity": 0.45
+  },
+  "primary_field_accuracy": {
+    "claim_status": 0.85,
+    "issue_type": 0.55,
+    "object_part": 0.85,
+    "severity": 0.45,
+    "evidence_standard_met": 0.85,
+    "valid_image": 0.55,
+    "risk_flags": 0.3,
+    "supporting_image_ids": 0.65
+  },
+  "claim_status_accuracy": 0.85,
+  "claim_status_confusion_matrix": {
+    "labels": [
+      "contradicted",
+      "not_enough_information",
+      "supported"
+    ],
+    "matrix": {
+      "contradicted": {
+        "contradicted": 4,
+        "not_enough_information": 0,
+        "supported": 1
+      },
+      "not_enough_information": {
+        "contradicted": 1,
+        "not_enough_information": 2,
+        "supported": 0
+      },
+      "supported": {
+        "contradicted": 1,
+        "not_enough_information": 0,
+        "supported": 11
+      }
+    },
+    "total": 20
+  },
+  "per_object_type_accuracy": {
+    "car": {
+      "rows": 8.0,
+      "exact_row_match_rate": 0.0,
+      "primary_exact_row_match_rate": 0.125,
+      "claim_status_accuracy": 0.75,
+      "evidence_standard_met": 0.75,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.125,
+      "issue_type": 0.5,
+      "object_part": 0.75,
+      "claim_status": 0.75,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.5,
+      "valid_image": 0.5,
+      "severity": 0.375
+    },
+    "laptop": {
+      "rows": 6.0,
+      "exact_row_match_rate": 0.0,
+      "primary_exact_row_match_rate": 0.16666666666666666,
+      "claim_status_accuracy": 1.0,
+      "evidence_standard_met": 1.0,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.6666666666666666,
+      "issue_type": 0.5,
+      "object_part": 1.0,
+      "claim_status": 1.0,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.8333333333333334,
+      "valid_image": 0.8333333333333334,
+      "severity": 0.6666666666666666
+    },
+    "package": {
+      "rows": 6.0,
+      "exact_row_match_rate": 0.0,
+      "primary_exact_row_match_rate": 0.0,
+      "claim_status_accuracy": 0.8333333333333334,
+      "evidence_standard_met": 0.8333333333333334,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.16666666666666666,
+      "issue_type": 0.6666666666666666,
+      "object_part": 0.8333333333333334,
+      "claim_status": 0.8333333333333334,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.6666666666666666,
+      "valid_image": 0.3333333333333333,
+      "severity": 0.3333333333333333
+    }
+  },
+  "strategy": "primary_v2",
+  "model": "google_cascade\u2192openrouter/free",
+  "model_calls": 20,
+  "images_processed": 29,
+  "total_latency_s": 945.3776872519811,
+  "avg_latency_s_per_claim": 47.26888436259905,
+  "prompt_tokens": 59099,
+  "completion_tokens": 3566,
+  "total_tokens": 89298,
+  "providers_used": [
+    "google"
+  ],
+  "models_used": [
+    "gemma-4-26b-a4b-it",
+    "gemma-4-31b-it"
+  ],
+  "cache_hits": 0
+}

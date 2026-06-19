@@ -1,0 +1,104 @@
+{
+  "rows": 20,
+  "exact_row_match_rate": 0.0,
+  "per_field_accuracy": {
+    "evidence_standard_met": 0.85,
+    "evidence_standard_met_reason": 0.0,
+    "risk_flags": 0.55,
+    "issue_type": 0.5,
+    "object_part": 0.9,
+    "claim_status": 0.8,
+    "claim_status_justification": 0.0,
+    "supporting_image_ids": 0.7,
+    "valid_image": 0.95,
+    "severity": 0.45
+  },
+  "claim_status_accuracy": 0.8,
+  "claim_status_confusion_matrix": {
+    "labels": [
+      "contradicted",
+      "not_enough_information",
+      "supported"
+    ],
+    "matrix": {
+      "contradicted": {
+        "contradicted": 2,
+        "not_enough_information": 1,
+        "supported": 2
+      },
+      "not_enough_information": {
+        "contradicted": 0,
+        "not_enough_information": 2,
+        "supported": 1
+      },
+      "supported": {
+        "contradicted": 0,
+        "not_enough_information": 0,
+        "supported": 12
+      }
+    },
+    "total": 20
+  },
+  "per_object_type_accuracy": {
+    "car": {
+      "rows": 8.0,
+      "exact_row_match_rate": 0.0,
+      "claim_status_accuracy": 1.0,
+      "evidence_standard_met": 0.875,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.5,
+      "issue_type": 0.5,
+      "object_part": 0.875,
+      "claim_status": 1.0,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.625,
+      "valid_image": 1.0,
+      "severity": 0.625
+    },
+    "laptop": {
+      "rows": 6.0,
+      "exact_row_match_rate": 0.0,
+      "claim_status_accuracy": 0.8333333333333334,
+      "evidence_standard_met": 1.0,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.8333333333333334,
+      "issue_type": 0.5,
+      "object_part": 1.0,
+      "claim_status": 0.8333333333333334,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 1.0,
+      "valid_image": 1.0,
+      "severity": 0.3333333333333333
+    },
+    "package": {
+      "rows": 6.0,
+      "exact_row_match_rate": 0.0,
+      "claim_status_accuracy": 0.5,
+      "evidence_standard_met": 0.6666666666666666,
+      "evidence_standard_met_reason": 0.0,
+      "risk_flags": 0.3333333333333333,
+      "issue_type": 0.5,
+      "object_part": 0.8333333333333334,
+      "claim_status": 0.5,
+      "claim_status_justification": 0.0,
+      "supporting_image_ids": 0.5,
+      "valid_image": 0.8333333333333334,
+      "severity": 0.3333333333333333
+    }
+  },
+  "strategy": "primary",
+  "model": "google_cascade\u2192openrouter/free",
+  "model_calls": 20,
+  "images_processed": 29,
+  "total_latency_s": 749.3424126240134,
+  "avg_latency_s_per_claim": 37.46712063120067,
+  "prompt_tokens": 47878,
+  "completion_tokens": 3432,
+  "total_tokens": 72563,
+  "providers_used": [
+    "google"
+  ],
+  "models_used": [
+    "gemma-4-26b-a4b-it"
+  ]
+}
